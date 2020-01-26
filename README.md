@@ -1,1 +1,1 @@
-# JavaExamples
+# Simple Java Example Projects
