@@ -5,6 +5,7 @@
 //
 // History:
 // 02/08/2020 Initial version (StW)
+// 02/09/2020 First working version (StW)
 //*******************************************************************
 import java.util.Scanner;
 
