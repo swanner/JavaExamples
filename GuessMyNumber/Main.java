@@ -12,7 +12,7 @@ import java.util.Scanner;
 public class Main {
 
     public static void main(String[] args) {
-        int randomNumber, lowerLimit, upperLimit, guessNumber=0, tries;
+        int randomNumber, lowerLimit, upperLimit, guessNumber=0, tries=0;
         Scanner in = new Scanner(System.in);
 
 	// get information about the random number range 
@@ -36,8 +36,9 @@ public class Main {
 	do {
 		try {
 			guessNumber = Integer.parseInt(in.nextLine());
+			tries++;
 			if (guessNumber==randomNumber){
-        			System.out.println("Awesome! You're right. The secret number is " + randomNumber + " ");
+        			System.out.println("Awesome! You're right. It took you " + tries + " tries to find the secret number " + randomNumber + ".");
 				break;        	}
         		else if (guessNumber > randomNumber){
         			System.out.println("Nice try, but your guess is too high.");
