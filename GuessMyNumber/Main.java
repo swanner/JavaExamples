@@ -31,7 +31,8 @@ public class Main {
 	// generate the random number with the given boundaries
         randomNumber = (int) (Math.random()*((upperLimit-lowerLimit)+1))+lowerLimit;
 
-        System.out.print("Try to guess the secret number: ");
+        System.out.println("Try to guess the secret number. ");
+	System.out.println("Hint: The number is somewhere between " + lowerLimit + " and " +  upperLimit + ".");
 	do {
 		try {
 			guessNumber = Integer.parseInt(in.nextLine());
