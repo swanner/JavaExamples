@@ -13,7 +13,7 @@ public class Main {
         Scanner in = new Scanner(System.in);
 
 	// get information about the random number range 
-        System.out.print("Lower limit of the secret number (press enter for 0):
+        System.out.print("Lower limit of the secret number (press enter for 0): ");
         try {
 			lowerLimit = Integer.parseInt(in.nextLine());
 		} catch (Exception e) {
