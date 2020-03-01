@@ -12,14 +12,14 @@ public class Main {
         int randomNumber, lowerLimit, upperLimit, guessNumber=0, tries=0;
         Scanner in = new Scanner(System.in);
 
-		// get information about the random number range 
-        System.out.print("Lower limit of the secret number (press enter for 100): ");
+	// get information about the random number range 
+        System.out.print("Lower limit of the secret number (press enter for 0):
         try {
 			lowerLimit = Integer.parseInt(in.nextLine());
 		} catch (Exception e) {
 			lowerLimit = 0;
 		}
-        System.out.print("Upper limit of the secret number (press enter for 0): ");
+        System.out.print("Upper limit of the secret number (press enter for 100): ");
 		try {
         	upperLimit = Integer.parseInt(in.nextLine());
 		} catch (Exception e) {
